@@ -83,3 +83,66 @@ form button {
 #req{
     color: red;
 }
+
+/* carousel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-content {
+    top: 5%;
+    left: 5%;
+    gap: 10px;
+    position: absolute;
+    color: white;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 95%;
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+}
+.carousel-prev, .carousel-next {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.star {
+    color: rgba(255, 255, 255, 0.333);
+    font-size: 24px;
+    cursor: pointer;
+}
+.star span:hover,
+    .star span:hover span {
+    transform: scale(1.2);
+    
+}
+
+
+@media (max-width: 768px) {
+    .carousel-content h2 {
+        font-size: 20px;
+    }
+    .carousel-content p {
+        font-size: 16px;
+    }
+}
