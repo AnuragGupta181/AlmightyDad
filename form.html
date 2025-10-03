@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>Login</div>
+    <div>
+        <section>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="main.html"><p>AlmightyDad</p></a>
+                </div>
+                <div class="nav-links">
+                    <a href="form.html">SignUp</a>
+                    <a href="carousel.html">Gallery</a>
+                </div>
+            </nav>
+        </section>
+        <section>
+            <div class="login-form">
+
+                <form action="/carousel.html" method="get">
+                    <label id="heading"><h2>Register</h2></label>
+                    <label for="name">Name <span id="req">*</span></label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="email">Email<span id="req">*</span></label>
+                    <input type="email" id="email" required>
+
+                    <label for="gender">Gender<span id="req">*</span></label>
+                    <select id="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="password">Password<span id="req">*</span></label>
+                    <input type="password" id="password" required>
+
+                    <label for="confirm-password">Confirm Password<span id="req">*</span></label>
+                    <input type="password" id="confirm-password" required>
+
+                    <button type="submit">Register</button>
+                </form>
+                
+            </div>
+        </section>
+    </div>
+   <script src="form.js"></script>
 </body>
 </html>
